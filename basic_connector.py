@@ -2,6 +2,7 @@ import snowflake.connector as sf
 import pandas as pd
 from config import config
 
+# points to snowflake demo bike sharing website
 conn = sf.connect(user=config.username,password=config.password,account=config.account)
 
 def test_connection(connection,query):
